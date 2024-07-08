@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>   
+        <section class="Panel">
+            <img class="Panel__imagen__logo" src="assets/img/Logo.png" alt="">
+            <div class="Panel__encriptar">
+                <div class="Panel__encriptar__interno">
+                    <textarea name="" id="textoentrada" class="Panel__encriptar__textarea" oninput="validar_texto(this);" placeholder="Ingrese el texto aqui"></textarea>
+                    <span class="Panel__encriptar__instruccion"><span style='font-size:1.875rem;'>&#128712;</span> Solo letras minúsculas y sin acentos</span>
+                    <div class="Panel__encriptar__botones">
+                        <button class="botones__acciones" onclick="procesar_Peticion('encriptar');" id="encriptar">Encriptar</button>
+                        <button class="botones__acciones" onclick="procesar_Peticion('desencriptar');" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Panel__respuesta">
+                <div class="Panel__respuesta__interior" id="sinrespuesta">
+                    <img src="assets/img/Muñeco.png" id="imagenrespuesta" alt="">
+                    <h2 class="Panel__respuesta__interior__titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="Panel__respuesta__interior__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>                   
+                </div>
+                <div class="Panel__respuesta__interior" id="respuestatexto">
+                    <textarea name="" class="Panel__encriptar__textarea" id="textosalida" disabled></textarea>
+                    <button class="botones__acciones" onclick="copiar_Texto();"  id="copiar">copiar</button>                
+                </div>
+            </div>
+        </section>     
+        
+    </main>
+    <footer>
+        <p>Desarrollado por Cesar Moises Arteaga German 2024</p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
