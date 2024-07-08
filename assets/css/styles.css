@@ -8,7 +8,7 @@
     --color-hover-gris:#D8DFE8;
     --color-activo-gris:#D8DFE8;
     --color-hover-azul:#356EA9;
-    --color-activo-azul:#072B61;
+    --color-activo-azul:#072B61;    
     
     --fuente-inter:"Inter", sans-serif;
 
@@ -20,6 +20,10 @@
 body{
     background-color: var(--color-primario);
     color: var(--color-secundario);
+    cursor: url("../img/cursor.png"),auto;
+}
+button, input, textarea {
+    cursor: url("../img/cursor.png"),auto;
 }
 footer{
     background-color: var(--color-secundario);
